@@ -132,4 +132,22 @@ SWITCH(
 * A significantly higher number of purchases (15,132) included an add-on compared to those that did not (4,867). This indicates that add-ons are a popular choice among customers and are driving additional revenue for the business.
 * The large difference in purchase numbers suggests that there is a significant opportunity to upsell or cross-sell add-ons to customers who did not initially choose one. Implementing strategies to promote add-ons during the checkout process or through targeted marketing campaigns could increase sales and customer satisfaction.
 
-![Add-on Purchases]()
+![Add-on Purchases](https://github.com/robbrody/Customer-Sales-Project/blob/main/images/Add-on_purchases.png)
+
+
+## Question 5: **How do sales volume and revenue vary across products?**
+**Skills: Pivot Chart**
+
+* I used hierarchical row structure to add Product Type and their associated SKU in to the rows of the Pivot Table.
+* I added two values to the table; Count of Sales(Number of Sales) and Total Price(Total Sales($USD)).
+* I created a combo Pivot Chart to plot Number of Sales on the Primary Axis and Total Sales($USD) on the Secondary Axis.
+* The Primary Axis was a Clustered Column Chart, and the secondary axis was a Line Chart with Markers.
+* To customize the chart I added titles to both vertical axes, formatted the secondary axis labels, removed the lines from Total Sales, and changed the markers to circles.
+* I also added Slicers to the chart in order to show the values by specific quarters and year.
+
+### Analysis
+**Insights:**
+* The number of sales remains relatively consistent across all products and product types (400 - 600 sales), while the total sales value shows significant variation ($50K - $4.2M).
+* Underperforming products in terms of sales revenue should be evaluated for potential discontinuation. Specifically, the Smartphone (SKU1001) with only $50K in sales and the Tablet (SKU1002) with $638K in sales are performing well below other products in the lineup.
+
+![Sales Volume Revenue Product]()
