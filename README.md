@@ -116,4 +116,20 @@ SWITCH(
 * Standard shipping is the most popular choice among customers, accounting for approximately 35% of all shipments. This suggests that customers are generally prioritizing cost-effectiveness over speed.
 * Express, Overnight, Same Day, and Expedited shipping options have similar usage rates, each accounting for around 16-17% of shipments. This indicates that customers are willing to pay a premium for faster shipping when needed, but there's no clear preference for one expedited option over another.
 
-![Shipping Perccentage]()
+![Shipping Perccentage](https://github.com/robbrody/Customer-Sales-Project/blob/main/images/Shipping_percentage.png)
+
+
+## Question 4: **How many purchases included an Add-on?**
+**Skills: Pivot Tables & Power Query**
+
+* I created the Column "Add-on Inculded" in Power Query when transforming the dataset.
+* I brought the "Add-on Included" Column into the rows of the Pivot Table.
+* I also brought the Transaction Count measure created in Power Pivot into the Pivot Table.
+* I then updated the row labels to help the visualization of the chart to "Included Add-on" and "No Add-on" from True and False.
+
+### Analysis
+**Insights:**
+* A significantly higher number of purchases (15,132) included an add-on compared to those that did not (4,867). This indicates that add-ons are a popular choice among customers and are driving additional revenue for the business.
+* The large difference in purchase numbers suggests that there is a significant opportunity to upsell or cross-sell add-ons to customers who did not initially choose one. Implementing strategies to promote add-ons during the checkout process or through targeted marketing campaigns could increase sales and customer satisfaction.
+
+![Add-on Purchases]()
