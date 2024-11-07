@@ -8,9 +8,9 @@ For this project, I began with a dataset from Kaggle containing 20,000 transacti
 
 To better understand the data from this online retailer, I explored the following questions:
 
-1. **What is the age of our customers?**
+1. **What is the age distribution of our customers?**
 2. **How many purchases are Loyalty Members making?**
-3. **How are our customers shipping their purchase?**
+3. **How are our customers shipping their purchases?**
 4. **How many purchases included an Add-on?**
 5. **How do sales volume and revenue vary across products?**
 
@@ -32,10 +32,10 @@ The dataset used for this project was sourced from Kaggle. This dataset contains
 **Skill: Power Query**
 
 #### Extract
-* I began by using Power Query to extract the original data() and create a query.
+* I began by using Power Query to extract the original data(https://github.com/robbrody/Customer-Sales-Project/blob/main/Electronic_sales_Sep2023-Sep2024.csv) and create a query.
 
 #### Transform
-* Then I tranformed the query by changing column types to the correct type(currency for price columns).
+* Then I tranformed the query by adjusting column types to the correct type(currency for price columns).
 * I added two new columns one for "Grand Total Purchase", which included adding "Total Price" and the "Add-on Total" together.
 * The second coloumn was created "Add-on included" in order to show True or False on whether an Add-on was in the transaction.
   ```
@@ -50,15 +50,15 @@ The dataset used for this project was sourced from Kaggle. This dataset contains
 
 ![Power Query Table](https://github.com/robbrody/Customer-Sales-Project/blob/main/images/Power_query_full.png)
 
-## Question 1: **What is the age of our customers?**
+## Question 1: **What is the age distribution of our customers?**
 **Skills: PowerPivot & DAX**
 
-* I created a data model in Power Pivot
+* I created a data model in Power Pivot.
 * I was able to create calculated fields in Power Pivot to use for the pivot tables: such as Customer Count & Transaction Count.
 ``` DAX
   Customer Count:=DISTINCTCOUNT([Customer ID])
 ```
-* I also created a new column [Age Buckets] in Power Pivot and used DAX in order to put the Age of Customers into Buckets for further analysis.
+* I also created a new column [Age Buckets] in Power Pivot using DAX to categorize customers' ages into buckets for further analysis.
 ``` DAX
   = 
 SWITCH(
@@ -86,7 +86,7 @@ SWITCH(
 ## Question 2: **How many purchases are Loyalty Members making?**
 **Skills: DAX & Pivot Tables**
 
-* I used DAX in order to create the Total Transaction Count needed for the Pivot Table.
+* I used DAX to a create the Total Transaction Count needed for the Pivot Table.
   ``` DAX
     Transaction Count:=COUNT([Customer ID])
   ```
@@ -102,7 +102,7 @@ SWITCH(
 ![Purchases by Loyalty Members](https://github.com/robbrody/Customer-Sales-Project/blob/main/images/Loyalty_members.png)
 
 
-## Question 3: **How are our customers shipping their purchase?**
+## Question 3: **How are our customers shipping their purchases?**
 **Skills: Pivot Tables & Pivot Charts**
 
 * I added the Shipping Type from the Data Model into the Rows of the Pivot Table Fields
