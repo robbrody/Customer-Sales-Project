@@ -6,7 +6,7 @@ For this project, I began with a dataset from Kaggle containing 20,000 transacti
 
 ### Questions to Analyze
 
-To understand the data form this online retailer, I asked the following:
+To better understand the data from this online retailer, I explored the following questions:
 
 1. **What is the age of our customers?**
 2. **How many purchases are Loyalty Members making?**
@@ -26,13 +26,13 @@ The following Excel skills were utilized for analysis:
 
 ### Customer purchase behavior - Electronic Sales Data Dataset
 
-The dataset used for thsi project was found on Kaggle. This dataset contains sales transaction records for an electronics company over a one-year period, spanning from September 2023 to September 2024. It includes detailed information about customer demographics, product types, and purchase behaviors. The dataset includes 20,000 transactions.
+The dataset used for this project was sourced from Kaggle. This dataset contains sales transaction records for an electronics company over a one-year period, spanning from September 2023 to September 2024. It includes detailed information about customer demographics, product types, and purchase behaviors. The dataset includes 20,000 transactions.
 
 ### ETL (Extract, Transform, Load)
 **Skill: Power Query**
 
 #### Extract
-* I first used Power Query to extract the original data () and create a query.
+* I began by using Power Query to extract the original data() and create a query.
 
 #### Transform
 * Then I tranformed the query by changing column types to the correct type(currency for price columns).
@@ -150,4 +150,8 @@ SWITCH(
 * The number of sales remains relatively consistent across all products and product types (400 - 600 sales), while the total sales value shows significant variation ($50K - $4.2M).
 * Underperforming products in terms of sales revenue should be evaluated for potential discontinuation. Specifically, the Smartphone (SKU1001) with only $50K in sales and the Tablet (SKU1002) with $638K in sales are performing well below other products in the lineup.
 
-![Sales Volume Revenue Product]()
+![Sales Volume Revenue Product](https://github.com/robbrody/Customer-Sales-Project/blob/main/images/Sales_volume_slicers_r1.png)
+
+
+## Conclusion
+
