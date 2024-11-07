@@ -29,6 +29,7 @@ The following Excel skills were utilized for analysis:
 The dataset used for thsi project was found on Kaggle. This dataset contains sales transaction records for an electronics company over a one-year period, spanning from September 2023 to September 2024. It includes detailed information about customer demographics, product types, and purchase behaviors. The dataset includes 20,000 transactions.
 
 ### ETL (Extract, Transform, Load)
+**Skill: Power Query**
 
 #### Extract
 * I first used Power Query to extract the original data () and create a query.
@@ -47,4 +48,38 @@ The dataset used for thsi project was found on Kaggle. This dataset contains sal
 #### Load
 * Finally, I loaded the transformed query into the workbook to set the foundation for my analysis.
 
-![Power Query Table]()
+![Power Query Table](https://github.com/robbrody/Customer-Sales-Project/blob/main/images/Power_query_full.png)
+
+## Question 1: **What is the age of our customers?**
+**Skills: PowerPivot & DAX**
+
+**Power Pivot & Dax**
+* I created a data model in Power Pivot
+* I was able to create calculated fields in Power Pivot to use for the pivot tables: such as Customer Count & Transaction Count.
+``` DAX
+  Customer Count:=DISTINCTCOUNT([Customer ID])
+  Transaction Count:=COUNT([Customer ID])
+```
+* I also created a new column [Age Buckets] in Power Pivot in order to put the Age of Customers into Buckets for further analysis.
+``` DAX
+  = 
+SWITCH(
+    TRUE(),
+    [Age] < 18, "<18",
+    [Age] >= 18 && [Age] <= 24, "18-24",
+    [Age] >= 25 && [Age] <= 34, "25-34",
+    [Age] >= 35 && [Age] <= 44, "35-44",
+    [Age] >= 45 && [Age] <= 54, "45-54",
+    [Age] >= 55 && [Age] <= 64, "55-64",
+    [Age] >= 65 && [Age] <= 74, "65-74",
+    [Age] >= 75, "75+",
+    "Unknown"
+)
+```
+### Analysis
+**Insights:**
+* The majority of customers fall within the 35-44 and 65-74 age groups. These two groups have the highest number of customers, indicating that these are the primary segments for the business.
+* The graph shows a relatively wide age range of customers, from 18-24 to 75+. This suggests that the product or service offered has a broad appeal across different generations.
+* The lowest customer ranges include 18-24 years of age, and over 75 years of age, suggesting that their may be an opportunity to target and gain more of these aged customers.
+
+![Age of Customers Chart]()
