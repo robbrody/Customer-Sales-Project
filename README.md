@@ -58,7 +58,7 @@ The dataset used for thsi project was found on Kaggle. This dataset contains sal
 ``` DAX
   Customer Count:=DISTINCTCOUNT([Customer ID])
 ```
-* I also created a new column [Age Buckets] in Power Pivot in order to put the Age of Customers into Buckets for further analysis.
+* I also created a new column [Age Buckets] in Power Pivot and used DAX in order to put the Age of Customers into Buckets for further analysis.
 ``` DAX
   = 
 SWITCH(
@@ -108,8 +108,8 @@ SWITCH(
 * I added the Shipping Type from the Data Model into the Rows of the Pivot Table Fields
 * I also brought in the Transaction Count Measure into the Values of Pivot Table, and converted the Value Field Settings to show % of Grand Total instead of the counts.
 
-![Shipping Value Field Settings]()
-* I then Sorted the Pivot Table to show the largest values first to format the Pivot Chart.
+![Shipping Value Field Settings](https://github.com/robbrody/Customer-Sales-Project/blob/main/images/Shipping_Value_Field_Settings.png)
+* I then sorted the Pivot Table to show the largest values first to format the Pivot Chart.
 
 ### Analysis
 **Insights:**
