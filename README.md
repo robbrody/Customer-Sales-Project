@@ -99,4 +99,21 @@ SWITCH(
 * The number of purchases made by Loyalty Members has significantly increased from 2023 to 2024. This indicates that the loyalty program is gaining traction and driving more customer engagement.
 * From 2023 to 2024, there was a notable increase in purchases by Loyalty Members, accompanied by an even greater rise in purchases by non-members. This trend indicates growth in the Loyalty Member program, while also highlighting an opportunity to encourage more non-members to join.
 
-![Purchases by Loyalty Members
+![Purchases by Loyalty Members](https://github.com/robbrody/Customer-Sales-Project/blob/main/images/Loyalty_members.png)
+
+
+## Question 3: **How are our customers shipping their purchase?**
+**Skills: Pivot Tables & Pivot Charts**
+
+* I added the Shipping Type from the Data Model into the Rows of the Pivot Table Fields
+* I also brought in the Transaction Count Measure into the Values of Pivot Table, and converted the Value Field Settings to show % of Grand Total instead of the counts.
+
+![Shipping Value Field Settings]()
+* I then Sorted the Pivot Table to show the largest values first to format the Pivot Chart.
+
+### Analysis
+**Insights:**
+* Standard shipping is the most popular choice among customers, accounting for approximately 35% of all shipments. This suggests that customers are generally prioritizing cost-effectiveness over speed.
+* Express, Overnight, Same Day, and Expedited shipping options have similar usage rates, each accounting for around 16-17% of shipments. This indicates that customers are willing to pay a premium for faster shipping when needed, but there's no clear preference for one expedited option over another.
+
+![Shipping Perccentage]()
