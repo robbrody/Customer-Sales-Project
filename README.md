@@ -44,11 +44,13 @@ The dataset used for this project was sourced from Kaggle. This dataset contains
 * I also filtered one transaction that contained N/A value out of the dataset.
   
 ![Applied Steps in Power Query](https://github.com/robbrody/Customer-Sales-Project/blob/main/images/Power_query_applied_steps.png)
+
   
 #### Load
 * Finally, I loaded the transformed query into the workbook to set the foundation for my analysis.
 
 ![Power Query Table](https://github.com/robbrody/Customer-Sales-Project/blob/main/images/Power_query_full.png)
+
 
 ## Question 1: **What is the age distribution of our customers?**
 **Skills: PowerPivot & DAX**
@@ -83,6 +85,7 @@ SWITCH(
 ![Age of Customers Chart](https://github.com/robbrody/Customer-Sales-Project/blob/main/images/Age_of_customers.png)
 
 
+
 ## Question 2: **How many purchases are Loyalty Members making?**
 **Skills: DAX & Pivot Tables**
 
@@ -102,6 +105,7 @@ SWITCH(
 ![Purchases by Loyalty Members](https://github.com/robbrody/Customer-Sales-Project/blob/main/images/Loyalty_members.png)
 
 
+
 ## Question 3: **How are our customers shipping their purchases?**
 **Skills: Pivot Tables & Pivot Charts**
 
@@ -109,6 +113,7 @@ SWITCH(
 * I also brought in the Transaction Count Measure into the Values of Pivot Table, and converted the Value Field Settings to show % of Grand Total instead of the counts.
 
 ![Shipping Value Field Settings](https://github.com/robbrody/Customer-Sales-Project/blob/main/images/Shipping_Value_Field_Settings.png)
+
 * I then sorted the Pivot Table to show the largest values first to format the Pivot Chart.
 
 ### Analysis
@@ -116,7 +121,8 @@ SWITCH(
 * Standard shipping is the most popular choice among customers, accounting for approximately 35% of all shipments. This suggests that customers are generally prioritizing cost-effectiveness over speed.
 * Express, Overnight, Same Day, and Expedited shipping options have similar usage rates, each accounting for around 16-17% of shipments. This indicates that customers are willing to pay a premium for faster shipping when needed, but there's no clear preference for one expedited option over another.
 
-![Shipping Perccentage](https://github.com/robbrody/Customer-Sales-Project/blob/main/images/Shipping_percentage.png)
+![Shipping Perccentage](https://github.com/robbrody/Customer-Sales-Project/blob/main/images/Shipping_percentage_r2.png)
+
 
 
 ## Question 4: **How many purchases included an Add-on?**
@@ -135,6 +141,7 @@ SWITCH(
 ![Add-on Purchases](https://github.com/robbrody/Customer-Sales-Project/blob/main/images/Add-on_purchases.png)
 
 
+
 ## Question 5: **How do sales volume and revenue vary across products?**
 **Skills: Pivot Chart**
 
@@ -151,6 +158,7 @@ SWITCH(
 * Underperforming products in terms of sales revenue should be evaluated for potential discontinuation. Specifically, the Smartphone (SKU1001) with only $50K in sales and the Tablet (SKU1002) with $638K in sales are performing well below other products in the lineup.
 
 ![Sales Volume Revenue Product](https://github.com/robbrody/Customer-Sales-Project/blob/main/images/Sales_volume_slicers_r1.png)
+
 
 
 ## Conclusion
