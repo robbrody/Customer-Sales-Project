@@ -53,12 +53,10 @@ The dataset used for thsi project was found on Kaggle. This dataset contains sal
 ## Question 1: **What is the age of our customers?**
 **Skills: PowerPivot & DAX**
 
-**Power Pivot & Dax**
 * I created a data model in Power Pivot
 * I was able to create calculated fields in Power Pivot to use for the pivot tables: such as Customer Count & Transaction Count.
 ``` DAX
   Customer Count:=DISTINCTCOUNT([Customer ID])
-  Transaction Count:=COUNT([Customer ID])
 ```
 * I also created a new column [Age Buckets] in Power Pivot in order to put the Age of Customers into Buckets for further analysis.
 ``` DAX
@@ -80,6 +78,25 @@ SWITCH(
 **Insights:**
 * The majority of customers fall within the 35-44 and 65-74 age groups. These two groups have the highest number of customers, indicating that these are the primary segments for the business.
 * The graph shows a relatively wide age range of customers, from 18-24 to 75+. This suggests that the product or service offered has a broad appeal across different generations.
-* The lowest customer ranges include 18-24 years of age, and over 75 years of age, suggesting that their may be an opportunity to target and gain more of these aged customers.
+* The lowest customer ranges include the 18-24 age group, and over 75+ age group, suggesting that there may be an opportunity to target and gain more customers in these age groups.
 
-![Age of Customers Chart]()
+![Age of Customers Chart](https://github.com/robbrody/Customer-Sales-Project/blob/main/images/Age_of_customers.png)
+
+
+## Question 2: **How many purchases are Loyalty Members making?**
+**Skills: DAX & Pivot Tables**
+
+* I used DAX in order to create the Total Transaction Count needed for the Pivot Table.
+  ``` DAX
+    Transaction Count:=COUNT([Customer ID])
+  ```
+* I added the Loyalty Member to the Columns, whcih is a Yes or No in the Data, and COnverted those to "Not a Member" and "Loyalty Member" in the Pivot Table for the visualization.
+* I added the Purchase Date (Years) to the Rows of the Pivot Table in order to show time in a line graph.
+* I finally added the Transaction Count to the Values in order to finalize the information needed for the chart.
+
+### Analysis
+**Insights:**
+* The number of purchases made by Loyalty Members has significantly increased from 2023 to 2024. This indicates that the loyalty program is gaining traction and driving more customer engagement.
+* From 2023 to 2024, there was a notable increase in purchases by Loyalty Members, accompanied by an even greater rise in purchases by non-members. This trend indicates growth in the Loyalty Member program, while also highlighting an opportunity to encourage more non-members to join.
+
+![Purchases by Loyalty Members
