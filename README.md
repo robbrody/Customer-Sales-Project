@@ -40,5 +40,11 @@ The dataset used for thsi project was found on Kaggle. This dataset contains sal
   ```
   = Table.AddColumn(#"Changed Type1", "Add-on included", each if [#"Add-on Total"]>0 then true else false)
   ```
-![Applied Steps in Power Query]()
+* I also filtered one transaction that contained N/A value out of the dataset.
   
+![Applied Steps in Power Query](https://github.com/robbrody/Customer-Sales-Project/blob/main/images/Power_query_applied_steps.png)
+  
+#### Load
+* Finally, I loaded the transformed query into the workbook to set the foundation for my analysis.
+
+![Power Query Table]()
