@@ -40,5 +40,5 @@ The dataset used for thsi project was found on Kaggle. This dataset contains sal
   ```
   = Table.AddColumn(#"Changed Type1", "Add-on included", each if [#"Add-on Total"]>0 then true else false)
   ```
-
+![Applied Steps in Power Query]()
   
